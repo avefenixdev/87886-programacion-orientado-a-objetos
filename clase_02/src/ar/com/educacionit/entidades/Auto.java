@@ -17,7 +17,20 @@ public class Auto {
 		this.modelo = modelo;
 		this.velocidad = velocidad;
 	}
-
+	
+	// Sobrecargamos el método acelerar
+	// Diferentes firmas igual nombre de método
+	
+	// public void acelerar() != public void acelerar(int velocidad)
+	
+	public void acelerar() {
+		this.velocidad = 10;
+	}
+		
+	public void acelerar(int velocidad) {
+		this.velocidad = velocidad;
+	}
+	
 	
 	// Sobrescribimos el método toString()
 	
@@ -25,6 +38,8 @@ public class Auto {
 	public String toString() {
 		return "Auto [marca=" + marca + ", color=" + color + ", modelo=" + modelo + ", velocidad=" + velocidad + "]";
 	}
+	
+	
 	
 	
 	

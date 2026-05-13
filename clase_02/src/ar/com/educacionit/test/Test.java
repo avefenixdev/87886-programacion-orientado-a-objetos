@@ -1,7 +1,6 @@
 package ar.com.educacionit.test;
 
-import ar.com.educacionit.entidades.Auto;
-import ar.com.educacionit.entidades.Cliente;
+import ar.com.educacionit.entidades.*;
 
 public class Test {
 
@@ -36,6 +35,14 @@ public class Test {
 		System.out.println(a1);
 		System.out.println(a2);
 		System.out.println(a3);
+		
+		a1.acelerar();
+		
+		System.out.println(a1);
+		
+		a1.acelerar(20);
+		
+		System.out.println(a1);
 		
 	}
 
