@@ -31,6 +31,14 @@ public class Auto {
 		this.velocidad = velocidad;
 	}
 	
+	public void acelerar(int velocidad, boolean nitro) {
+		if ( nitro ) {
+			this.velocidad = velocidad * 2;
+		} else {
+			this.velocidad = velocidad;
+		}
+	}
+	
 	
 	// Sobrescribimos el método toString()
 	

@@ -38,11 +38,15 @@ public class Test {
 		
 		a1.acelerar();
 		
-		System.out.println(a1);
+		System.out.println(a1); // 10
 		
 		a1.acelerar(20);
 		
-		System.out.println(a1);
+		System.out.println(a1); // 20
+		
+		a1.acelerar(30, true);
+		
+		System.out.println(a1); // 60
 		
 	}
 
