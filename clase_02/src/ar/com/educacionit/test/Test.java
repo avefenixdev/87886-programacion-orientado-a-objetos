@@ -60,6 +60,19 @@ public class Test {
 		System.out.println(ar1);
 		System.out.println(ar2);
 		
+		Motor m3 = new Motor(2, 150, "Nafta");
+		
+		Rueda r1 = new Rueda("Michelin", 30);
+		Rueda r2 = new Rueda("Michelin", 29);
+		Rueda r3 = new Rueda("Michelin", 28);
+		Rueda r4 = new Rueda("Michelin", 31);
+		
+		Rueda[] ruedas = {r1, r2, r3, r4}; // Colección (array)
+		
+		AutoRelacion ar3 = new AutoRelacion("Honda", "Negro Mate", "Civic", 0, m3, ruedas);
+		
+		System.out.println(ar3);
+		
 	}
 
 }

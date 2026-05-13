@@ -1,5 +1,7 @@
 package ar.com.educacionit.entidades;
 
+import java.util.Arrays;
+
 public class AutoRelacion {
 	
 	// Atributos/propiedades
@@ -24,6 +26,15 @@ public class AutoRelacion {
 		this.motor = motor;
 	}
 	
+	public AutoRelacion(String marca, String color, String modelo, int velocidad, Motor motor, Rueda[] ruedas) {
+		this.marca = marca;
+		this.color = color;
+		this.modelo = modelo;
+		this.velocidad = velocidad;
+		this.motor = motor;
+		this.ruedas = ruedas;
+	}
+	
 	public AutoRelacion(
 			String marca, String color, String modelo, 
 			int velocidad, int cilindrada, int caballos, 
@@ -39,7 +50,7 @@ public class AutoRelacion {
 	// Diferentes firmas igual nombre de método
 	
 	// public void acelerar() != public void acelerar(int velocidad)
-	
+
 	public void acelerar() {
 		this.velocidad = 10;
 	}
@@ -59,22 +70,12 @@ public class AutoRelacion {
 
 
 	
-	
 	// Sobrescribimos el método toString()
-	
+
 	@Override
 	public String toString() {
 		return "AutoRelacion [marca=" + marca + ", color=" + color + ", modelo=" + modelo + ", velocidad=" + velocidad
-				+ ", motor=" + motor + "]";
+				+ ", motor=" + motor + ", ruedas=" + Arrays.toString(ruedas) + "]";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
