@@ -1,5 +1,6 @@
 package ar.com.educacionit.test;
 
+import ar.com.educacionit.entidades.Auto;
 import ar.com.educacionit.entidades.Cliente;
 
 public class Test {
@@ -23,6 +24,18 @@ public class Test {
 
 		System.out.println(c2);
 		System.out.println(c3);
+		
+		System.err.println("-------------------------");
+		
+		Auto a1 = new Auto("Toyota", "Rosa", "Corola", 0);
+		
+		Auto a2 = new Auto("Nissan", "Negro", "KAIT", 0);
+		
+		Auto a3 = new Auto("VW", "Gris", "Gol", 0);
+		
+		System.out.println(a1);
+		System.out.println(a2);
+		System.out.println(a3);
 		
 	}
 
