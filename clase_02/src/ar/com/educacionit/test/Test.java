@@ -48,6 +48,15 @@ public class Test {
 		
 		System.out.println(a1); // 60
 		
+		System.err.println("-------------------------");
+		
+		Motor m1 = new Motor();
+		Motor m2 = new Motor(3, 300, "Nafta");
+		
+		AutoRelacion ar1 = new AutoRelacion("Ferrari", "Roja", "Testarrosa", 0, m2);
+		
+		System.out.println(ar1);
+		
 	}
 
 }
