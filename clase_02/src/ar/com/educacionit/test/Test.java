@@ -55,7 +55,10 @@ public class Test {
 		
 		AutoRelacion ar1 = new AutoRelacion("Ferrari", "Roja", "Testarrosa", 0, m2);
 		
+		AutoRelacion ar2 = new AutoRelacion("Porsche", "Amarilla", "Carrera 911", 0, 4, 280, "Nafta");
+		
 		System.out.println(ar1);
+		System.out.println(ar2);
 		
 	}
 

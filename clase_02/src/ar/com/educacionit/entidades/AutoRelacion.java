@@ -8,8 +8,11 @@ public class AutoRelacion {
 	String color;
 	String modelo;
 	int velocidad;
-	Motor motor; // tipo de dato clase
-
+	// Relación simple
+	Motor motor; // tipo de dato clase	
+	// Relación multiple
+	Rueda ruedas[]; // Colección ruedas // [] <--- array de ruedas
+	
 
 	// Constructor parametrizado
 	
@@ -19,6 +22,17 @@ public class AutoRelacion {
 		this.modelo = modelo;
 		this.velocidad = velocidad;
 		this.motor = motor;
+	}
+	
+	public AutoRelacion(
+			String marca, String color, String modelo, 
+			int velocidad, int cilindrada, int caballos, 
+			String combustible) {
+		this.marca = marca;
+		this.color = color;
+		this.modelo = modelo;
+		this.velocidad = velocidad;
+		this.motor = new Motor(cilindrada, caballos, combustible);
 	}
 	
 	// Sobrecargamos el método acelerar
