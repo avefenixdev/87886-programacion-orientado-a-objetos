@@ -2,7 +2,7 @@ package ar.com.educacionit.entidades;
 
 public class Corazon {
 	
-	int latidosPorMinuto;
+	private int latidosPorMinuto;
 		
 	// Constructor default
 	public Corazon() {	}
@@ -18,6 +18,14 @@ public class Corazon {
 		System.out.println("El corazón late  a: " + this.latidosPorMinuto + "bpm");
 	}
 
+	// Métodos Getters and Setters
+	public int getLatidosPorMinuto() {
+		return latidosPorMinuto;
+	}
+
+	public void setLatidosPorMinuto(int latidosPorMinuto) {
+		this.latidosPorMinuto = latidosPorMinuto;
+	}
 
 	@Override
 	public String toString() {

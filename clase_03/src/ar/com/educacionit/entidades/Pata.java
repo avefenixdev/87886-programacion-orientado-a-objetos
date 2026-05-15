@@ -2,8 +2,9 @@ package ar.com.educacionit.entidades;
 
 public class Pata {
 	
-	String posicion;
-	boolean funcional;
+	private String posicion;
+	private boolean funcional;
+	
 	
 	// Constructor default
 	public Pata() {	}
@@ -22,6 +23,24 @@ public class Pata {
 			System.out.println("Pata " + this.posicion + "lesionada");
 		}
 	}
+	
+	// Métodos Getters and Setters
+	public String getPosicion() {
+		return posicion;
+	}
+
+	public void setPosicion(String posicion) {
+		this.posicion = posicion;
+	}
+
+	public boolean isFuncional() {
+		return funcional;
+	}
+
+	public void setFuncional(boolean funcional) {
+		this.funcional = funcional;
+	}
+
 
 	@Override
 	public String toString() {

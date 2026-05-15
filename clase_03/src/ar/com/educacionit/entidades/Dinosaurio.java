@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Dinosaurio {
 	
 	// Atributos (Siempre privados -> hay excepción)
-	public String nombre; // (-)
-	public String especie; // (-)
-	public boolean esCarnivoro; // (-)
-	public Corazon corazon; /* relación simple */ // (-)
-	public ArrayList<Pata> patas; /* relación multiples */ // (-)
+	private String nombre; // (-)
+	private String especie; // (-)
+	private boolean esCarnivoro; // (-)
+	private Corazon corazon; /* relación simple */ // (-)
+	private ArrayList<Pata> patas; /* relación multiples */ // (-)
 	
 	public Dinosaurio() {}
 
@@ -38,10 +38,59 @@ public class Dinosaurio {
 		
 	}
 	
+	// Métodos getters y setters
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre, String rol) {
+		// En la realidad el control del rol ocurre en otro lado, no en clase Dinosaurio
+		if ( rol == "Admin") {
+			this.nombre = nombre;			
+		} else {
+			System.out.println("No puedes modificar el nombre del dinosaurio");
+		}
+	}
+
+	public String getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+	public boolean isEsCarnivoro() {
+		return esCarnivoro;
+	}
+
+	// No pueden pasar de hervivoros a carnivoros.
+	/* public void setEsCarnivoro(boolean esCarnivoro) {
+		this.esCarnivoro = esCarnivoro;
+	} */
+
+	public Corazon getCorazon() {
+		return corazon;
+	}
+
+	public void setCorazon(Corazon corazon) {
+		this.corazon = corazon;
+	}
+
+	public ArrayList<Pata> getPatas() {
+		return patas;
+	}
+
+	public void setPatas(ArrayList<Pata> patas) {
+		this.patas = patas;
+	}
+	
 	@Override
 	public String toString() {
 		return "Dinosaurio [nombre=" + nombre + ", especie=" + especie + ", esCarnivoro=" + esCarnivoro + "]";
 	}
+
 	
 
 }
