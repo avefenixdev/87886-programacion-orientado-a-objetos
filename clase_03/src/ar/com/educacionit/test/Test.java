@@ -2,9 +2,12 @@ package ar.com.educacionit.test;
 
 import java.util.ArrayList;
 
+import ar.com.educacionit.entidades.Administrador;
+import ar.com.educacionit.entidades.Alumno;
 import ar.com.educacionit.entidades.Corazon;
 import ar.com.educacionit.entidades.Dinosaurio;
 import ar.com.educacionit.entidades.Pata;
+import ar.com.educacionit.entidades.Usuario;
 
 public class Test {
 
@@ -55,6 +58,17 @@ public class Test {
 		//dino1.setPatas(null);
 		
 		dino1.caminar();
+		
+		// Herencia
+		
+		Administrador adm1 = new Administrador("Pedro", "pedro@gmail.com", true);
+		Alumno alum1 = new Alumno("Juan", "juan@gmail.com", "5-54547-2");
+		
+		// No quiero que usuario dentro de mi aplicación se pueda instanciar
+		// Convirtiendo la clase que queremos que no se pueda instanciar por otros
+		// En una clase abstracta.
+		// Usuario user1 = new Usuario("Luis", "luis@gmail.com");
+		
 		
 		
 	}

@@ -9,10 +9,18 @@ public class Dinosaurio {
 	private String especie; // (-)
 	private boolean esCarnivoro; // (-)
 	private Corazon corazon; /* relación simple */ // (-)
-	private ArrayList<Pata> patas; /* relación multiples */ // (-)
+	private ArrayList<Pata> patas = new ArrayList<Pata>(); /* relación multiples */ // (-)
 	
 	public Dinosaurio() {}
-
+	
+	// Constructor parametrizado
+	public Dinosaurio(String nombre, String especie, boolean esCarnivoro, Corazon corazon) {
+		this.nombre = nombre;
+		this.especie = especie;
+		this.esCarnivoro = esCarnivoro;
+		this.corazon = corazon;
+	}
+	
 	// Constructor parametrizado
 	public Dinosaurio(String nombre, String especie, boolean esCarnivoro, Corazon corazon, ArrayList<Pata> patas) {
 		this.nombre = nombre;
