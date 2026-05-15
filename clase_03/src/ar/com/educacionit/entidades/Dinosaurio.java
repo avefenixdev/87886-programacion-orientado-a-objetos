@@ -19,22 +19,29 @@ public class Dinosaurio {
 		this.especie = especie;
 		this.esCarnivoro = esCarnivoro;
 		this.corazon = corazon;
+		System.out.println(this.patas);
 		this.patas = patas;
+		System.out.println(this.patas);
 	}
 
 	// Método
 	
+	public void agregarPata(Pata pata) {
+		patas.add(pata);
+	}
 	
+	public void caminar() {
+		System.out.println(this.nombre);
+		for (Pata p : patas) {
+			p.apoyar();
+		}
+	}
 
 	void comer() {
 		
 	}
 	
 	void rugir() {
-		
-	}
-		
-	void caminar() {
 		
 	}
 	
@@ -85,12 +92,14 @@ public class Dinosaurio {
 	public void setPatas(ArrayList<Pata> patas) {
 		this.patas = patas;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Dinosaurio [nombre=" + nombre + ", especie=" + especie + ", esCarnivoro=" + esCarnivoro + "]";
+		return "Dinosaurio [nombre=" + nombre + ", especie=" + especie + ", esCarnivoro=" + esCarnivoro + ", corazon="
+				+ corazon + ", patas=" + patas + "]";
 	}
-
+	
+	
 	
 
 }

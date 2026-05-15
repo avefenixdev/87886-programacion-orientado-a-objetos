@@ -14,7 +14,7 @@ public class Corazon {
 	}
 
 	// this --> hace referencia al atributo de instancia de la clase creada.
-	void latir() {
+	public void latir() {
 		System.out.println("El corazón late  a: " + this.latidosPorMinuto + "bpm");
 	}
 

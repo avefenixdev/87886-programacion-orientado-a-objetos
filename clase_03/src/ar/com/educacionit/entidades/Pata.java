@@ -18,9 +18,9 @@ public class Pata {
 
 	void apoyar() {
 		if ( funcional ) {
-			System.out.println("Pata " + this.posicion + "apoyando");
+			System.out.println("Pata " + this.posicion + " apoyando");
 		} else {
-			System.out.println("Pata " + this.posicion + "lesionada");
+			System.out.println("Pata " + this.posicion + " no funcional");
 		}
 	}
 	
