@@ -1,6 +1,7 @@
 package ar.com.educacionit.test;
 
 import ar.com.educacionit.entidades.Alumno;
+import ar.com.educacionit.entidades.Curso;
 import ar.com.educacionit.entidades.Docente;
 import ar.com.educacionit.entidades.Materia;
 import ar.com.educacionit.entidades.Persona;
@@ -34,7 +35,24 @@ public class Test {
 		System.out.println(m1);
 		System.out.println(m2);
 		
+		Curso curso = new Curso("Carrera de programación");
+		System.out.println(curso);
 		
+		curso.agregarAlumno(alum1);
+		curso.agregarAlumno(alum2);
+		curso.agregarMateria(m1);
+		curso.agregarMateria(m2);
+		
+		System.out.println(curso);
+		System.out.println("-------------------");
+		for (Alumno alumno : curso.getAlumnos()) {
+			System.out.println(alumno);
+		}
+		System.out.println("-------------------");
+		for (Materia materia : curso.getMaterias()) {
+			System.out.println(materia);
+		}
+		System.out.println("-------------------");
 		
 		
 		

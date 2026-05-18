@@ -36,9 +36,11 @@ public class Curso {
 	public List<Materia> getMaterias() {
 		return materias;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Curso [nombre=" + nombre + ", alumnos=" + alumnos + ", materias=" + materias + "]";
+	}
+		
 
 }
