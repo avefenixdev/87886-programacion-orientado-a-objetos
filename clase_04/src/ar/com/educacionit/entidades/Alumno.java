@@ -3,17 +3,32 @@ package ar.com.educacionit.entidades;
 public class Alumno extends Persona {
 
 	// Atributos (Propiedades)
-	private int legajo;	
+	private int legajo;
+	// Atributo estático
+	private static int contadorAlumno = 0;
+	// Método estático
+	public static int getContadorAlumno() {
+		return contadorAlumno;
+	}
+	
 	
 	// Constructor paremtrizado sin legajo
 	public Alumno(String nombre, int edad) {
 		super(nombre, edad);
+		
+		incrementarContadorAlumno();
 	}
 	
 	// Constructor paremtrizado con legajo	
 	public Alumno(String nombre, int edad, int legajo) {
-		super(nombre, edad);
+		super(nombre, edad); // Instancio una persona
 		this.legajo = legajo;
+		
+		incrementarContadorAlumno();
+	}
+	
+	private static void incrementarContadorAlumno() {
+		contadorAlumno++;
 	}
 	
 	// Métodos getters y setters

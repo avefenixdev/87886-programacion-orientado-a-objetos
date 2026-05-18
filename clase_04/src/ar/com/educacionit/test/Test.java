@@ -54,11 +54,23 @@ public class Test {
 		}
 		System.out.println("-------------------");
 		
+		for (Alumno alumno : curso.getAlumnos()) {
+			System.out.println(alumno.getNombre());
+			System.out.println(alumno.getEdad());
+			System.out.println(alumno.getLegajo());
+			System.out.println(alumno.getRol());
+			System.out.println("--");
+		}
+		System.out.println("-------------------");
 		
+		System.out.println(Alumno.getContadorPersona()); // 4
 		
+		Alumno alum3 = new Alumno("Juana", 33, 33333);
+		System.out.println(alum3);
+		System.out.println(Alumno.getContadorPersona());
+		System.out.println("-------------------");
+		System.out.println(Alumno.getContadorAlumno());
 		
-		
-
 	}
 
 }
